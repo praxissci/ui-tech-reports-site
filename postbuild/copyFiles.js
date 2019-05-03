@@ -22,6 +22,6 @@ filter_js = (src) => {
 exports.copyFiles = () => {
   return Promise.all([
     fs.copy('./assets', './dist'),
-    fs.copy('./node_modules/@webcomponents/webcomponentsjs', './dist/webcomponentsjs', { filter: filter_js })
+    fs.copy('./node_modules/@webcomponents/webcomponentsjs', './dist/node_modules/@webcomponents/webcomponentsjs', { filter: filter_js })
   ]).then(_=>console.log('Postbuild: copy files'));
 };
