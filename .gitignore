@@ -1,0 +1,8 @@
+.rpt2_cache/
+build/
+dist/
+node_modules/
+
+# ssl setup
+/*.cnf
+/*.pem
